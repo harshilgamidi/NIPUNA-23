@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <link rel="icon" href="/images/pricing/favicon-32x32.png" type="image/x-icon">
+    <title>NIPUNA</title>
+    
+    <!-- Icons font CSS-->
+    <link href="vendor3/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor3/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor3/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor3/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css3/main.css" rel="stylesheet" media="all">
+</head>
+
+<body> 
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+          <a href="#" class="back-button" onclick="history.go(-1)">&larr; Back</a>
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+                    <form method="post" name="myform" id="myform" action="">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">FullName</label>
+                                    <input class="input--style-4" type="text" name="FullName" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date of Birth</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="DOB" required>
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio"  name="Gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="Gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Whatsapp Number</label>
+                                    <input class="input--style-4" type="text" name="PhoneNumber" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+				<style>
+ .back-button {
+    display: block;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color:#fff;
+    color: #fff;
+    text-decoration: none;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+   
+    width: 200px;
+    color:crimson;
+    font-weight: 500;
+  }
+
+  /* Media query for small screens */
+  @media only screen and (max-width: 576px) {
+    .back-button {
+      font-size: 14px;
+      width: 100px;
+    }
+  }
+
+					.container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    .cart {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    /* Add CSS Grid styles */
+    .events-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+    
+    /* Style each event container */
+    .event {
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Style event title and price */
+    .event-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .event-price {
+      font-size: 16px;
+      font-weight: bold;
+    }
+				</style>
+						<div class="container">
+							<h1>Events Cart</h1>
+              <p style="margin-top: -20px;margin-bottom: 20px;">NOTE : Complete pack includes free food and access to all the 17 events.<br></p>
+							<form id="myForm">
+							  <div class="events-container">
+								<div class="event">
+								  <div class="event-title">Complete Pack</div>
+								  <div class="event-price">350/-</div>
+								  <label for="price1">
+									<input type="checkbox" id= "price1" name="event1" value="350" onclick="updateTotalPrice()"> Add to cart
+								  </label>
+								</div>
+								<div class="event">
+								  <div class="event-title">Combo Pack-1</div>
+								  <div class="event-price">119/-</div>
+								  <label for="price2">
+									<input type="checkbox" id= "price2" name="event2" value="119" onclick="updateTotalPrice()"> Add to cart
+								  </label>
+								</div>
+								<div class="event">
+								  <div class="event-title">Combo Pack-2</div>
+								  <div class="event-price">119/-</div>
+								  <label for="price3">
+									<input type="checkbox" id="price3" name="event3" value="119" onclick="updateTotalPrice()"> Add to cart
+								  </label>
+								</div>
+								<div class="event">
+								  <div class="event-title">Combo Pack-3</div>
+								  <div class="event-price">119/-</div>
+								  <label for="price4">
+									<input type="checkbox" id="price4"name="event4" value="119" onclick="updateTotalPrice()"> Add to cart
+								  </label>
+								</div>
+								<div class="event">
+									<div class="event-title">Code Combat</div>
+									<div class="event-price">50/-</div>
+									<label for="price5">
+									  <input type="checkbox" id="price5"name="event5" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">WordSphere</div>
+									<div class="event-price">50/-</div>
+									<label for="price6">
+									  <input type="checkbox" id="price6" name="event6" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Mystery Mansion</div>
+									<div class="event-price">50/-</div>
+									<label for="price7">
+									  <input type="checkbox" id="price7" name="event7" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">STRUQTA</div>
+									<div class="event-price">50/-</div>
+									<label for="price8">
+									  <input type="checkbox" id="price8" name="event8" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Model United Nations</div>
+									<div class="event-price">50/-</div>
+									<label for="price9">
+									  <input type="checkbox" id="price9" name="event9" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Business Capital</div>
+									<div class="event-price">50/-</div>
+									<label for="price10">
+									  <input type="checkbox" id="price10" name="event10" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Electrolance</div>
+									<div class="event-price">50/-</div>
+									<label for="price11">
+									  <input type="checkbox" id="price11" name="event11" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Mind Quest</div>
+									<div class="event-price">50/-</div>
+									<label for="price12">
+									  <input type="checkbox" id="price12" name="event12" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">IPL Auction</div>
+									<div class="event-price">50/-</div>
+									<label for="price13">
+									  <input type="checkbox" id="price13" name="event13" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">Alliance</div>
+									<div class="event-price">50/-</div>
+									<label for="price14">
+									  <input type="checkbox" id="price14" name="event14" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="event">
+									<div class="event-title">UNIQUS</div>
+									<div class="event-price">50/-</div>
+									<label for="price15">
+									  <input type="checkbox" id="price15" name="event15" value="50" onclick="updateTotalPrice()"> Add to cart
+									</label>
+								  </div>
+								  <div class="p-t-15">
+									<div class="event">
+                    <div class="event-title">Amount to be paid : </div>
+									<div class="event-title" id="total-price" style="color:maroon;font-size:x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></div>
+									</div>
+								</div>
+                
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                          <a href="/paymentPage.html" class="payment" id="myButton" type="submit">Paynow</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+  .payment{
+   margin: 30px 20px;
+        padding: 10px 20px;
+        font-size: large;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+}
+</style>
+    <!-- Jquery JS-->
+    <script src="vendor3/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor3/select2/select2.min.js"></script>
+    <script src="vendor3/datepicker/moment.min.js"></script>
+    <script src="vendor3/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js3/global.js"></script>
+
+
+	<script>
+  var values;
+  function updateTotalPrice() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var totalPrice = 0;
+    for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].checked) {
+        
+        var value = parseInt(checkboxes[i].value);
+        if(value === 350)
+        {
+          totalPrice = 350
+          break
+        }
+        else{
+          totalPrice+=value
+          if(totalPrice>=350)
+          {
+            totalPrice = 350
+            break;
+          }
+        }
+      }
+    }
+    document.getElementById('total-price').textContent = 'Total price: ' + totalPrice + '/-';
+    values = totalPrice
+  }
+  </script>
+  <script>
+    const myForm = document.getElementById('myForm');
+     const myform = document.getElementById('myform');
+			const myButton = document.getElementById('myButton');
+				myButton.addEventListener('click', () => {
+          if (!myform.checkValidity()) {
+    				event.preventDefault();
+   					 alert('All fields are required!');
+					}
+          else{
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxXqZLyaFLcHRbNWeLe2rGiG7iOBr9oDYk4SrY6bx1tTGKtBmVEo4XsWfPqxmXKYzuWUw/exec'
+          const form = document.forms['myform']
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Hi'))
+        .then(() => {  window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+          var myVariable = values;
+          if(myVariable===undefined || myVariable===0)
+          {
+            event.preventDefault();
+            alert("You can't do payment with 0/- amount")
+          }
+          else{
+          var message = 'your Total :' + values;
+  				alert(message);                     
+  				localStorage.setItem("myVariable", myVariable);
+          }
+          }	
+				});
+    
+  </script>
+
+  
+</body>
+
+</html>
+<!-- end document-->
