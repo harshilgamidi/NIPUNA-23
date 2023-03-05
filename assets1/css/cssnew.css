@@ -1,0 +1,62 @@
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+  cursor: pointer;
+  color: aqua;
+}
+
+/* Style for the navigation bar */
+/* Style for the header text */
+.header-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the register button */
+
+/* Style for the container */
+
+
+/* Style for the countdown text */
+.countdown-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.header-content-area{
+
+  margin: 0;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #7b5b5b;
+  
+}
+.container{
+  
+  
+  padding: 0px;
+}
